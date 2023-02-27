@@ -52,7 +52,7 @@ async function updateBreedInfo(breedId) {
   try {
     const breedData = await getBreedData(breedId);
     const breedImage = await getBreedImages(breedId);
-    const pawIcon = `<img src='../images/paw-icon.svg' alt='icon of a dog paw'></img>`;
+    const pawIcon = `<img src='./images/paw-icon.svg' alt='icon of a dog paw'></img>`;
 
     breedName.innerHTML = `<h2>${breedData.name}</h2>`;
     breedImg.innerHTML = `<img src="${breedImage}" alt="picture of a ${breedData.name} dog">`;
