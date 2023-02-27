@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="scripts/main.js" type="module" defer></script>
+
+		<title>Website about dogs | DogAPI</title>
+	</head>
+	<body id="app">
+		<main>
+			<div class="gallery-container">
+				<div class="gallery"></div>
+				<button id="load-gallery-btn">Load Gallery</button>
+				<button id="hide-gallery-btn" hidden>Hide</button>
+			</div>
+
+			<div class="breed-container hidden">
+				<select name="breed-select" id="breed-select">
+					<option value="1" disabled selected>Select a dog breed</option>
+				</select>
+
+				<div class="breed-info">
+					<div id="breed-name"></div>
+					<div id="breed-img"></div>
+					<div id="breed-text"></div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="credits">
+				<p>
+					Coded by
+					<a href="https://www.linkedin.com/in/rafael-mb/" target="_blank">Rafael Barbieri</a>
+				</p>
+				<p>Design by <a href="https://www.behance.net/rquela" target="_blank">Raquel</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
